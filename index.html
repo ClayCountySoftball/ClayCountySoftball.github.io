@@ -252,13 +252,15 @@
         background-attachment: fixed;
                 background-repeat: unset;
         background-size: cover;
-/*         background-position: center; */
-        background-position: calc(50% - 83px) center;
+        background-position: center;
+/*         background-position: calc(50% - 83px) center; */
         background-blend-mode: hard-light;
     }
       #preloader-text{
         padding-bottom: 10%;
-                font-size: 5em;
+        font-size: 5em;
+        top: 25%
+        white-space: wrap;
       }
       .top-text {
             -webkit-text-stroke: 3px #093b60;
@@ -409,11 +411,6 @@ function setupInstallPrompt() {
 // Run when page loads
 document.addEventListener('DOMContentLoaded', () => {
     setupInstallPrompt();
-  gtag('event', 'app_mode', {
-        'event_category': 'User Engagement',
-        'event_label': isStandalone() ? 'Standalone App' : 'Browser',
-        'value': isStandalone() ? 1 : 0
-    });
 });
 
 // Platform detection functions (unchanged)
@@ -461,11 +458,6 @@ if (window.matchMedia) {
 // Initial call
 resizeIframe();  
 
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-Z2VF1K0SZM');
    
   </script>
 </body>
