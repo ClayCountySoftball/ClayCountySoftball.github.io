@@ -157,22 +157,22 @@
       display: none;
     }
         #preloader-text {
-      background: 50% 100% / 50% 50% no-repeat radial-gradient(ellipse at bottom, #00205b, transparent, transparent);
-      -webkit-background-clip: text; 
-       background-clip: text;
-          -webkit-text-stroke: 3px black;
-      color: #cabd00;
-      font-size: 4rem;
-      /* font-family: "Source Sans Pro", sans-serif; */
-/*       animation: reveal 2000ms ease-in-out forwards 200ms, linear infinite 2000ms; */
-      font-weight: 900;
-      white-space: nowrap;
-      line-height: 1;
-      text-align: center;
-      position: relative;
-      -webkit-text-stroke: 2px white;
-      animation: slow 3s ease-in-out forwards;
-          padding-bottom: 10%;
+/*       background: 50% 100% / 50% 50% no-repeat radial-gradient(ellipse at bottom, #00205b, transparent, transparent); */
+/*     -webkit-background-clip: text; */
+    color: rgb(0, 0, 0, 0.4);
+    font-size: 5rem;
+/*     font-family: "Source Sans Pro", sans-serif; */
+    font-weight: 900;
+    white-space: wrap;
+    line-height: 1;
+    text-align: center;
+    position: relative;
+    -webkit-text-stroke: 4px white;
+    animation: slow 3s ease-in-out forwards;
+    display: flex;
+    align-items: center;
+    top: 33%;
+
     }
         @keyframes slow {
   from {
@@ -210,10 +210,10 @@
         margin: 0px 3px;
       }
       #preloader {
-/*         background: linear-gradient(to top, #0a1723 3%, rgba(10, 23, 35, 0.8) 5%, rgba(10, 23, 35, 0) 28%, rgba(10, 23, 35, 0) 90%, rgba(10, 23, 35, 0.8) 96%, #0a1723 98%), 
-                    url(https://raw.githubusercontent.com/ClayCountySoftball/ClayCountySoftball.github.io/refs/heads/main/Softball-Loader2.png); */
+        background: linear-gradient(to top, #0a1723 3%, rgba(10, 23, 35, 0.8) 5%, rgba(10, 23, 35, 0) 28%, rgba(10, 23, 35, 0) 60%, rgba(10, 23, 35, 0.8) 80%, #0a1723 98%), 
+              url(https://i.etsystatic.com/15591817/r/il/f988af/1991254131/il_1080xN.1991254131_ahkf.jpg);
 /*          background: url(https://raw.githubusercontent.com/ClayCountySoftball/ClayCountySoftball.github.io/refs/heads/main/Softball-Loader2.png); */
-         background: url(https://i.etsystatic.com/15591817/r/il/f988af/1991254131/il_1080xN.1991254131_ahkf.jpg);
+/*          background: url(https://i.etsystatic.com/15591817/r/il/f988af/1991254131/il_1080xN.1991254131_ahkf.jpg); */
         background-attachment: fixed;
                 background-repeat: unset;
         background-size: cover;
@@ -233,7 +233,7 @@
   
   <div id="preloader">
     <div id="preloader-text">
-      <span class="top-text">Clay County Softball</span>
+      <span class="top-text">CLAY COUNTY SOFTBALL 2025</span>
     </div>
   </div>
 
@@ -281,7 +281,7 @@
             const preloader = document.getElementById('preloader');
             setTimeout(() => {
                 preloader.style.display = 'none';
-            }, 5000);
+            }, 3000);
         });
 
     
